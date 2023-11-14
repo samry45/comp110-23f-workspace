@@ -1,8 +1,10 @@
+"""Testing conditionals."""
+
 name: str = input("Name? ")
 
-if len(name)>6:
+if len(name) > 6:
     print("Do you have a nickname?")
 elif name == "Alyssa":
-        print("I love Comp110!")
+    print("I love Comp110!")
 else:
-        print("Nice to meet you, " + name)
+    print("Nice to meet you, " + name)

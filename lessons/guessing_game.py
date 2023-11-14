@@ -2,7 +2,7 @@
 
 from random import randint
 
-secret: int = randint(1,100)
+secret: int = randint(1, 100)
 guess: int = int(input("Guess a number between 1 and 100: "))
 number_of_tries: int = 1
 max_tries: int = 10

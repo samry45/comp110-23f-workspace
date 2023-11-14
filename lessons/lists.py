@@ -7,4 +7,4 @@ grocery_list.append("bread")
 grocery_list[1] = "cereal"
 grocery_list.pop(2)
 
-print (grocery_list[3])
+print(grocery_list[3])
