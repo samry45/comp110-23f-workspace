@@ -22,11 +22,21 @@ class Node:
         else:
             return f"{self.data} -> {self.next}"
         
-    def head(self):
-        return None
+    def head(self) -> int:
+        """Return the first data point."""
+        first_data: int = self.data
+        return first_data
     
-    def tail(self):
-        return None
+    def tail(self) -> Node | None:
+        """Return the string visualization without the first Node."""
+        if self.next is None:
+            return None
+        else:
+            return self.next
     
-    def last(self):
-        return None
+    def last(self) -> int:
+        """Return the last data point."""
+        if self.next is None:
+            return self.data
+        else:
+            return self.next.last()
